@@ -17,8 +17,6 @@ next shot sustaining 50% less damage than normal.
 var gridSize = 99;
 var barrier = 20;
 var cells = [];
-var playerActive = void 0;
-var playerNotActive = void 0;
 var notActivePlayer = void 0;
 var activePlayerPowerDiv = void 0;
 var activePlayer = 1;

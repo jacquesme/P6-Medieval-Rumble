@@ -2,6 +2,8 @@
 
 // Variables
 var questionsMark = 5;
+var playerActive = void 0;
+var playerNotActive = void 0;
 
 // Weapon function constructor:
 function Weapon(type, value, itemClass) {
