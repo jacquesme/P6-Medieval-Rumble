@@ -1,6 +1,9 @@
 'use strict';
 
+// Variables
 var playerDefend = null;
+var player1Active = true;
+var player2Active = false;
 
 // Player construction function
 var Player = function Player(name, life, itemClass, player, weapon, power, activePath) {
