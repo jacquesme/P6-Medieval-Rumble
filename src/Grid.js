@@ -15,7 +15,6 @@ next shot sustaining 50% less damage than normal.
 const gridSize = 99;
 const barrier = 20;
 let cells = [];
-let possibleMoves = 3;
 let playerActive;
 let playerNotActive;
 let notActivePlayer;
