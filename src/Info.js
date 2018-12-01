@@ -15,8 +15,7 @@ const attackBtn1 = $('.btn-attack-1');
 const attackBtn2 = $('.btn-attack-2');
 const defendBtn1 = $('.btn-defend-1');
 const defendBtn2 = $('.btn-defend-2');  
-const boardContainer = $('#board-container');  
-const gridContainer = $('#board-game');
+const boardContainer = $('#board-container');
 
 //Set attributes to the acctive player to use them by replacing weapon
 function setActivePlayer(Active, notActive, activePowerDiv) {
