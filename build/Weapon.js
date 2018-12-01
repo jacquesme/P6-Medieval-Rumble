@@ -7,6 +7,8 @@ var playerNotActive = void 0;
 var currentWeapon = 1;
 var hover = false;
 var scores = 0;
+var activePlayer = 1;
+var notActivePlayer = void 0;
 
 // Weapon function constructor:
 function Weapon(type, value, itemClass) {

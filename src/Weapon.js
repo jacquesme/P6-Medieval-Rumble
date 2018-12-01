@@ -5,6 +5,8 @@ let playerNotActive;
 let currentWeapon = 1;
 let hover = false;
 let scores = 0;
+let activePlayer = 1;
+let notActivePlayer;
 
 // Weapon function constructor:
 function Weapon(type, value, itemClass) {
