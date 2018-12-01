@@ -44,7 +44,6 @@ var turnMessage = ["Your move!", "Try to get a stronger weapon", "Improve your l
 var noTurnMessage = "It's not your turn yet.";
 // Quiz 
 var scores = 0;
-var questionsMark = 5;
 
 // Grid constructor function to create grid tile board with obstacles (No Accsess)
 var Grid = function Grid(gridSize) {

@@ -47,7 +47,7 @@ const turnMessage = [
 const noTurnMessage = "It's not your turn yet.";
 // Quiz 
 let scores = 0;
-let questionsMark = 5;
+
 
 // Grid constructor function to create grid tile board with obstacles (No Accsess)
 const Grid = function(gridSize) {

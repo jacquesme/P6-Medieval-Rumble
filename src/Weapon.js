@@ -1,3 +1,5 @@
+// Variables
+let questionsMark = 5;
 
 // Weapon function constructor:
 function Weapon(type, value, itemClass) {

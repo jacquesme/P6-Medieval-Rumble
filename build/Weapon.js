@@ -1,5 +1,8 @@
 'use strict';
 
+// Variables
+var questionsMark = 5;
+
 // Weapon function constructor:
 function Weapon(type, value, itemClass) {
     this.type = type;
