@@ -61,8 +61,8 @@ const Grid = function(gridSize) {
     this.create  = function() {
         for (let i = 0; i <= gridSize; i += 1) {
         gridContainer.append('<li class="box" data-index="' + i + '"></li>');
-        //let cellNum = $('.box').length;
-        //cells.push(cellNum);
+        let cellNum = $('.box').length;
+        cells.push(cellNum);
         }
     }
     this.barrier = function(itemClass) {

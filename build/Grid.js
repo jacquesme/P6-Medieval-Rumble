@@ -58,8 +58,8 @@ var Grid = function Grid(gridSize) {
     this.create = function () {
         for (var i = 0; i <= gridSize; i += 1) {
             gridContainer.append('<li class="box" data-index="' + i + '"></li>');
-            //let cellNum = $('.box').length;
-            //cells.push(cellNum);
+            var cellNum = $('.box').length;
+            cells.push(cellNum);
         }
     };
     this.barrier = function (itemClass) {
