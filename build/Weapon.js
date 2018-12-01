@@ -6,6 +6,7 @@ var playerActive = void 0;
 var playerNotActive = void 0;
 var currentWeapon = 1;
 var hover = false;
+var scores = 0;
 
 // Weapon function constructor:
 function Weapon(type, value, itemClass) {
@@ -107,7 +108,7 @@ function fight(posNew, posOld) {
 //Initialize the Game
 function initGame() {
     game.create();
-    for (var i = 0; i < barrier; i += 1) {
+    for (var i = 0; i < barrier; i++) {
         game.barrier('barrier');
     }
     sword1.add();

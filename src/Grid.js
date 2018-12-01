@@ -42,16 +42,13 @@ const turnMessage = [
 "Don't attack your oponent to quickly."
 ]
 const noTurnMessage = "It's not your turn yet.";
-// Quiz 
-let scores = 0;
-
-
+ 
 // Grid constructor function to create grid tile board with obstacles (No Accsess)
 const Grid = function(gridSize) {
     this.gridSize = gridSize;
 
     this.create  = function() {
-        for (let i = 0; i <= gridSize; i += 1) {
+        for (let i = 0; i <= gridSize; i ++) {
         gridContainer.append('<li class="box" data-index="' + i + '"></li>');
         let cellNum = $('.box').length;
         cells.push(cellNum);

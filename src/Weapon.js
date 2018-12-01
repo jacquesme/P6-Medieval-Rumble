@@ -4,6 +4,7 @@ let playerActive;
 let playerNotActive;
 let currentWeapon = 1;
 let hover = false;
+let scores = 0;
 
 // Weapon function constructor:
 function Weapon(type, value, itemClass) {
@@ -109,7 +110,7 @@ function fight(posNew, posOld) {
 //Initialize the Game
 function initGame() {
     game.create();
-    for (let i = 0; i < barrier; i += 1) {
+    for (let i = 0; i < barrier; i ++) {
         game.barrier('barrier');
     }
     sword1.add();
