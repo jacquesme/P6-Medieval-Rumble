@@ -5,6 +5,7 @@ var questionsMark = 5;
 var playerActive = void 0;
 var playerNotActive = void 0;
 var currentWeapon = 1;
+var hover = false;
 
 // Weapon function constructor:
 function Weapon(type, value, itemClass) {

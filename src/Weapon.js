@@ -3,6 +3,7 @@ let questionsMark = 5;
 let playerActive;
 let playerNotActive;
 let currentWeapon = 1;
+let hover = false;
 
 // Weapon function constructor:
 function Weapon(type, value, itemClass) {

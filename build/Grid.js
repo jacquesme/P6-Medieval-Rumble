@@ -22,7 +22,6 @@ var activePlayerPowerDiv = void 0;
 var activePlayer = 1;
 var turn = 0;
 var attacked = false;
-var hover = false;
 
 var attackBtn1 = $('.btn-attack-1');
 var attackBtn2 = $('.btn-attack-2');

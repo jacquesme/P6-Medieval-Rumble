@@ -20,7 +20,7 @@ let activePlayerPowerDiv;
 let activePlayer = 1;
 let turn = 0;
 let attacked = false;
-let hover = false;
+
 
 const attackBtn1 = $('.btn-attack-1');
 const attackBtn2 = $('.btn-attack-2');
