@@ -1,5 +1,7 @@
 'use strict';
 
+var cells = [];
+
 // Weapon function constructor:
 function Weapon(type, value, itemClass) {
     this.type = type;
