@@ -1,4 +1,3 @@
-let cells = [];
 
 // Weapon function constructor:
 function Weapon(type, value, itemClass) {
