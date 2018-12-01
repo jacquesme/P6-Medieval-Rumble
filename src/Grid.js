@@ -18,13 +18,9 @@ let cells = [];
 let turn = 0;
 let attacked = false;
 
-
-
 const startButton = $('#start');
-
 const gridContainer = $('#board-game');
 const startContainer = $('#intro');
-const gameOverContainer =$('#gameOver');
 const playerContainerDiv = $('.player-container');
 const powerDiv1 = $('.weapon-1');
 const powerDiv2 = $('.weapon-2');

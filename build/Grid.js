@@ -21,10 +21,8 @@ var turn = 0;
 var attacked = false;
 
 var startButton = $('#start');
-
 var gridContainer = $('#board-game');
 var startContainer = $('#intro');
-var gameOverContainer = $('#gameOver');
 var playerContainerDiv = $('.player-container');
 var powerDiv1 = $('.weapon-1');
 var powerDiv2 = $('.weapon-2');
