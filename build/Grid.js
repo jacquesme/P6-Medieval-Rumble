@@ -20,7 +20,6 @@ var cells = [];
 var notActivePlayer = void 0;
 var activePlayerPowerDiv = void 0;
 var activePlayer = 1;
-var currentWeapon = 1;
 var turn = 0;
 var attacked = false;
 var hover = false;

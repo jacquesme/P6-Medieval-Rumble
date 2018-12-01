@@ -18,7 +18,6 @@ let cells = [];
 let notActivePlayer;
 let activePlayerPowerDiv;
 let activePlayer = 1;
-let currentWeapon = 1;
 let turn = 0;
 let attacked = false;
 let hover = false;

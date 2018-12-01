@@ -4,6 +4,7 @@
 var questionsMark = 5;
 var playerActive = void 0;
 var playerNotActive = void 0;
+var currentWeapon = 1;
 
 // Weapon function constructor:
 function Weapon(type, value, itemClass) {
@@ -41,7 +42,7 @@ function replaceWeaponOnMap(value, weapon, num) {
     playerNotActive.power = value;
 }
 
-// Check weapon on the tile and call replace functions (for the player's boards and for the Grid):
+// Check weapon on the cell and call replace functions (for the player's boards and for the Grid):
 function checkWeapon(num) {
     var cell = $('.box[data-index="' + num + '"]');
     if (cell.hasClass('weapon')) {
