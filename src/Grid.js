@@ -15,7 +15,6 @@ next shot sustaining 50% less damage than normal.
 const gridSize = 99;
 const barrier = 20;
 let cells = [];
-let activePlayerPowerDiv;
 let turn = 0;
 let attacked = false;
 

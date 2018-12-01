@@ -2,6 +2,9 @@
 
 /*INFORMATION ON THE PLAYER DIV*/
 
+// Variables
+var activePlayerPowerDiv = void 0;
+
 //Set attributes to the acctive player to use them by replacing weapon
 function setActivePlayer(Active, notActive, activePowerDiv) {
     playerActive = Active;
