@@ -32,13 +32,6 @@ const playerContainerDiv = $('.player-container');
 const powerDiv1 = $('.weapon-1');
 const powerDiv2 = $('.weapon-2');
 const body = $('body');
-const turnMessage = [
-"Your move!",
-"Try to get a stronger weapon",
-"Improve your life points by trying a quiz.",
-"Don't attack your oponent to quickly."
-]
-const noTurnMessage = "It's not your turn yet.";
  
 // Grid constructor function to create grid tile board with obstacles (No Accsess)
 const Grid = function(gridSize) {

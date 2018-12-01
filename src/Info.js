@@ -3,6 +3,14 @@
 // Variables
 let activePlayerPowerDiv;
 
+const turnMessage = [
+    "Your move!",
+    "Try to get a stronger weapon",
+    "Improve your life points by trying a quiz.",
+    "Don't attack your oponent to quickly."
+    ]
+    const noTurnMessage = "It's not your turn yet.";
+
 //Set attributes to the acctive player to use them by replacing weapon
 function setActivePlayer(Active, notActive, activePowerDiv) {
     playerActive = Active;

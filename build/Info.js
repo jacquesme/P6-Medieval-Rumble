@@ -1,9 +1,12 @@
-'use strict';
+"use strict";
 
 /*INFORMATION ON THE PLAYER DIV*/
 
 // Variables
 var activePlayerPowerDiv = void 0;
+
+var turnMessage = ["Your move!", "Try to get a stronger weapon", "Improve your life points by trying a quiz.", "Don't attack your oponent to quickly."];
+var noTurnMessage = "It's not your turn yet.";
 
 //Set attributes to the acctive player to use them by replacing weapon
 function setActivePlayer(Active, notActive, activePowerDiv) {
