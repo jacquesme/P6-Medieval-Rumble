@@ -8,7 +8,7 @@ const Player = function(name, life, itemClass, player, weapon, power, activePath
     this.power = power;
     this.activePath = activePath;
 
-    //Add players to the Gap
+    //Add players to the Grid
     this.add = function () {
         addComponents(this.itemClass, this.player);
     }

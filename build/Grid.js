@@ -51,15 +51,15 @@ var noTurnMessage = "It's not your turn yet.";
 var scores = 0;
 var questionsMark = 5;
 
-// Grid constructor function to create map tile board with obstacles
+// Grid constructor function to create grid tile board with obstacles (No Accsess)
 var Grid = function Grid(gridSize) {
     this.gridSize = gridSize;
 
     this.create = function () {
         for (var i = 0; i <= gridSize; i += 1) {
             gridContainer.append('<li class="box" data-index="' + i + '"></li>');
-            var cellNum = $('.box').length;
-            cells.push(cellNum);
+            //let cellNum = $('.box').length;
+            //cells.push(cellNum);
         }
     };
     this.barrier = function (itemClass) {
