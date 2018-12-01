@@ -1,3 +1,5 @@
+let playerDefend = null;
+
 // Player construction function
 const Player = function(name, life, itemClass, player, weapon, power, activePath) {
     this.name = name;

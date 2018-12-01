@@ -25,7 +25,6 @@ var activePlayerPowerDiv = void 0;
 var activePlayer = 1;
 var currentWeapon = 1;
 var turn = 0;
-var playerDefend = null;
 var player1Active = true;
 var player2Active = false;
 var move = true;

@@ -141,7 +141,7 @@ function whoIsActive() {
 
 }
 
-// To find position x and y on the map 
+// To find position x and y on the grid 
 function getCoordinates(cell) {
     return {
         x: (cell) % 10

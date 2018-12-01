@@ -23,7 +23,6 @@ let activePlayerPowerDiv;
 let activePlayer = 1;
 let currentWeapon = 1;
 let turn = 0;
-let playerDefend = null;
 let player1Active = true;
 let player2Active = false;
 let move = true;

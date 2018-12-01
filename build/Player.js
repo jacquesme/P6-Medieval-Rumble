@@ -1,5 +1,7 @@
 'use strict';
 
+var playerDefend = null;
+
 // Player construction function
 var Player = function Player(name, life, itemClass, player, weapon, power, activePath) {
     this.name = name;
