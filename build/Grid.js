@@ -21,7 +21,7 @@ var turn = 0;
 var attacked = false;
 
 var startButton = $('#start');
-var boardContainer = $('#board-container');
+
 var gridContainer = $('#board-game');
 var startContainer = $('#intro');
 var gameOverContainer = $('#gameOver');

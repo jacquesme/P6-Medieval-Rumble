@@ -21,7 +21,7 @@ let attacked = false;
 
 
 const startButton = $('#start');
-const boardContainer = $('#board-container');
+
 const gridContainer = $('#board-game');
 const startContainer = $('#intro');
 const gameOverContainer =$('#gameOver');
