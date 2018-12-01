@@ -19,10 +19,7 @@ let turn = 0;
 let attacked = false;
 
 
-const attackBtn1 = $('.btn-attack-1');
-const attackBtn2 = $('.btn-attack-2');
-const defendBtn1 = $('.btn-defend-1');
-const defendBtn2 = $('.btn-defend-2');
+
 const startButton = $('#start');
 const boardContainer = $('#board-container');
 const gridContainer = $('#board-game');

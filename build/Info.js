@@ -8,6 +8,11 @@ var activePlayerPowerDiv = void 0;
 var turnMessage = ["Your move!", "Try to get a stronger weapon", "Improve your life points by trying a quiz.", "Don't attack your oponent to quickly."];
 var noTurnMessage = "It's not your turn yet.";
 
+var attackBtn1 = $('.btn-attack-1');
+var attackBtn2 = $('.btn-attack-2');
+var defendBtn1 = $('.btn-defend-1');
+var defendBtn2 = $('.btn-defend-2');
+
 //Set attributes to the acctive player to use them by replacing weapon
 function setActivePlayer(Active, notActive, activePowerDiv) {
     playerActive = Active;

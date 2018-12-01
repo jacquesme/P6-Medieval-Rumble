@@ -20,10 +20,6 @@ var cells = [];
 var turn = 0;
 var attacked = false;
 
-var attackBtn1 = $('.btn-attack-1');
-var attackBtn2 = $('.btn-attack-2');
-var defendBtn1 = $('.btn-defend-1');
-var defendBtn2 = $('.btn-defend-2');
 var startButton = $('#start');
 var boardContainer = $('#board-container');
 var gridContainer = $('#board-game');
