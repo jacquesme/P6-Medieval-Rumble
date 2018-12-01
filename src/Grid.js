@@ -23,7 +23,6 @@ let activePlayerPowerDiv;
 let activePlayer = 1;
 let currentWeapon = 1;
 let turn = 0;
-let move = true;
 let attacked = false;
 let hover = false;
 
