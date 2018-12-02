@@ -149,7 +149,7 @@ function movePlayer() {
                 $(this).css('cursor', 'not-allowed');
                 return;
             }
-            // If new tile includes players - don't move
+            // If new cell includes players - don't move
             if (player1Active) {
                 if (_cell2.hasClass('player2')) {
                     return;
