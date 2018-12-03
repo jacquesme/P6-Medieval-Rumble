@@ -109,33 +109,33 @@ function startGame(){
 // Attack and defend buttons connected with attack function mentioned in player function constructor
 function fightPlayerOne(){
     attackBtn1.click(function() {
-        player1.attack(player2);
+        player1.attack(player2); // Player.js (30) Player fight
         playerDefend = 0;
         turn = 2;
         activePlayer = 2;
-        combat();
+        combat(); // Info.js (51) Show and hide buttons during the fight
     });
     defendBtn1.click(function(){
         playerDefend = 1;
         turn = 2;
         activePlayer = 2;
-        combat();
+        combat(); // Info.js (51) Show and hide buttons during the fight
         
     })
 }
 function fightPlayerTwo() {
         attackBtn2.click(function() {
-        player2.attack(player1);
+        player2.attack(player1); // Player.js (30) Player fight
         playerDefend = 0;
         turn = 1;
         activePlayer = 1;
-        combat();
+        combat(); // Info.js (51) Show and hide buttons during the fight
     });
     defendBtn2.click(function(){       
         turn = 1;
         playerDefend = 1;
         activePlayer = 1;
-        combat();
+        combat(); // Info.js (51) Show and hide buttons during the fight
         
     })
 }

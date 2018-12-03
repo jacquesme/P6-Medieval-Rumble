@@ -40,7 +40,7 @@ var extra = new Weapon('Extra1', 10, 'quiz-1');
 // Replace the weapon on the Grid:
 function replaceWeaponOnMap(value, weapon, num) {
     var cell = $('.box[data-index="' + num + '"]');
-    whoIsActive(); // Weapon.js (136) Check which player is active:
+    whoIsActive(); // Weapon.js (136) Check which player is active
     cell.removeClass(weapon).addClass(playerActive.weapon);
     playerActive.weapon = weapon;
     playerNotActive.power = value;
@@ -52,8 +52,8 @@ function checkWeapon(num) {
     if (cell.hasClass('weapon')) {
         if (cell.hasClass('wp-1')) {
             currentWeapon = 1;
-            replaceWeaponOnMap(gun1.value, 'wp-1', num);
-            replaceWeaponOnBoard(gun1.value);
+            replaceWeaponOnMap(gun1.value, 'wp-1', num); // Weapon.js (39) Replace the weapon on the Grid
+            replaceWeaponOnBoard(gun1.value); // Info.js (38) Replace the weapon information on the player's div
             return;
         }
         if (cell.hasClass('wp-2')) {
@@ -100,10 +100,10 @@ function fight(posNew, posOld) {
     if (posNew.x === posOld.x && posNew.y <= posOld.y + 1 && posNew.y >= posOld.y - 1 || posNew.y === posOld.y && posNew.x <= posOld.x + 1 && posNew.x >= posOld.x - 1) {
         move = false;
         hover = false;
-        fightingArea();
+        fightingArea(); // Info.js (70) When the players fight, the board game is hidden
         scores = 0;
-        fightPlayerOne();
-        fightPlayerTwo();
+        fightPlayerOne(); // Info.js (110)
+        fightPlayerTwo(); // Info.js (126)
     }
 }
 
