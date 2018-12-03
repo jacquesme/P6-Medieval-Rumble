@@ -150,7 +150,6 @@ function whoIsActive() {
 function getCoordinates(cell) {
     return {
         x: cell % 10,
-
         y: Math.floor(cell / 10)
     };
 }

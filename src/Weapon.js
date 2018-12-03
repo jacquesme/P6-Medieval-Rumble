@@ -153,8 +153,7 @@ function whoIsActive() {
 // To find position x and y on the grid 
 function getCoordinates(cell) {
     return {
-        x: (cell) % 10
-        ,
+        x: (cell) % 10,
         y: Math.floor((cell) / 10)
     }
 }
