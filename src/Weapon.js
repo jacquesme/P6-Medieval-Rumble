@@ -38,7 +38,7 @@ let extra = new Weapon ('Extra1', 10, 'quiz-1');
 // Replace the weapon on the Grid:
 function replaceWeaponOnMap(value, weapon, num) {
     let cell = $('.box[data-index="' + num + '"]');
-    whoIsActive();
+    whoIsActive();// Weapon.js (136) Check which player is active:
     cell.removeClass(weapon).addClass(playerActive.weapon);
     playerActive.weapon = weapon;    
     playerNotActive.power = value;        
@@ -137,9 +137,9 @@ function whoIsActive() {
     if (player1Active) {
         activePlayer = 2;
         notActivePlayer = 1;
-        setActivePlayer(player2, player1, powerDiv2);
-        setActiveBoard(notActivePlayer, activePlayer);
-        displayMessageOnBoard(activePlayer);  
+        setActivePlayer(player2, player1, powerDiv2); // Info.js (21) Set attributes to the active player to use them by replacing weapon
+        setActiveBoard(notActivePlayer, activePlayer); //Info.js (27) Add a class for a playerDiv of the active player to display current information about game flow
+        displayMessageOnBoard(activePlayer);  // Info.js (32) Display random message on active player's div
     } else {
         activePlayer = 1; 
         notActivePlayer = 2;

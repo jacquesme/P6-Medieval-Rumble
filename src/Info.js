@@ -18,7 +18,7 @@ const defendBtn2 = $('.btn-defend-2');
 const boardContainer = $('#board-container');
 const gameOverContainer =$('#gameOver');
 
-//Set attributes to the acctive player to use them by replacing weapon
+//Set attributes to the active player to use them by replacing weapon
 function setActivePlayer(Active, notActive, activePowerDiv) {
     playerActive = Active;
     playerNotActive = notActive; 
