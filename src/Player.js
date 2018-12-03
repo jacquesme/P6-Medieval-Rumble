@@ -58,7 +58,7 @@ const Player = function(name, life, itemClass, player, weapon, power, activePath
 let player1 = new Player('Don', 100, 'player1', 1, 'wp-1', 25, 'image/path-1.png');
 let player2 = new Player('Dennis', 100, 'player2', 2, 'wp-1', 25, 'image/path-2.png');
 
-// Initialize the movment of the players:
+// Initialize the movement of the players:
 // Players can move by the mouse click 3 tiles horizontally or vertically, avoiding tiles with obstacles
 // and the tiles with another player
 function movePlayer() {
