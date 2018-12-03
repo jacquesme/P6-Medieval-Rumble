@@ -18,7 +18,6 @@ var gridSize = 99;
 var barrier = 20;
 var cells = [];
 var turn = 0;
-var attacked = false;
 
 var startButton = $('#start');
 var gridContainer = $('#board-game');

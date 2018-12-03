@@ -4,6 +4,7 @@ let player1Active = true;
 let player2Active = false;
 let move = true;
 let possibleMoves = 3;
+let attacked = false;
 
 // Player construction function
 const Player = function(name, life, itemClass, player, weapon, power, activePath) {
