@@ -69,6 +69,7 @@ function movePlayer() {
             let sqHovered = $(this).data('index');
             let posNew = getCoordinates(sqHovered); //Weapons.js(153) Get coordinates x and y
             //Check the posible move horizontally
+            // Old position is the position of not active player in the moment
             for (let i = Math.min(posOld.x, posNew.x); i <= Math.max(posOld.x, posNew.x); i++) {
                 let num = getCellIndex(i, posOld.y); // Weapons.js(169) Get cell index (0 to 99)
                 let cell = $('.box[data-index="' + num + '"]');
@@ -86,6 +87,7 @@ function movePlayer() {
                 }
             }
             //Check the posible move vertically 
+            // Old position is the position of not active player in the moment
             for (let i = Math.min(posOld.y, posNew.y); i <= Math.max(posOld.y, posNew.y); i++) {
                 let num = getCellIndex(posOld.x, i); // Weapons.js(169) Get cell index (0 to 99)
                 let cell = $('.box[data-index="' + num + '"]');
@@ -103,7 +105,7 @@ function movePlayer() {
                 }
             }
             if (!attacked) {
-                // If players don't cross adjacent tile, their path for possible movement will be shown in red or //yellow block (activePath)
+                // If players don't cross adjacent cell, their path for possible movement will be shown in red or //yellow block (activePath)
                 if (posNew.y === posOld.y && posNew.x <= posOld.x + possibleMoves && posNew.x >= posOld.x - possibleMoves
                     || posNew.x === posOld.x && posNew.y <= posOld.y + possibleMoves && posNew.y >= posOld.y - possibleMoves) {
 
