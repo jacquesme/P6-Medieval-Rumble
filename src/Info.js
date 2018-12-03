@@ -2,6 +2,7 @@
 
 // Variables
 let activePlayerPowerDiv;
+let turn = 0;
 
 const turnMessage = [
     "Your move!",

@@ -15,7 +15,6 @@ next shot sustaining 50% less damage than normal.
 const gridSize = 99;
 const barrier = 20;
 let cells = [];
-let turn = 0;
 
 const startButton = $('#start');
 const gridContainer = $('#board-game');
