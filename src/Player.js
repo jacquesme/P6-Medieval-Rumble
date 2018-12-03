@@ -67,7 +67,7 @@ function movePlayer() {
     gameBox.hover( function () {
             hover = true;
             let sqHovered = $(this).data('index');
-            let posNew = getCoordinates(sqHovered);
+            let posNew = getCoordinates(sqHovered); //Weapons.js(153) Get coordinates x and y
             //Check the posible move horizontally
             for (let i = Math.min(posOld.x, posNew.x); i <= Math.max(posOld.x, posNew.x); i++) {
                 let num = getCellIndex(i, posOld.y);
