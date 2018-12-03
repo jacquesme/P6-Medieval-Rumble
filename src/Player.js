@@ -49,7 +49,6 @@ const Player = function(name, life, itemClass, player, weapon, power, activePath
         } else if (this.life <= 0) {
             $('#winner').text(whichPlayer.name);
             $('#looser').text(this.name);
-
         }
     }    
 };
@@ -59,8 +58,8 @@ let player1 = new Player('Don', 100, 'player1', 1, 'wp-1', 25, 'image/path-1.png
 let player2 = new Player('Dennis', 100, 'player2', 2, 'wp-1', 25, 'image/path-2.png');
 
 // Initialize the movement of the players:
-// Players can move by the mouse click 3 tiles horizontally or vertically, avoiding tiles with obstacles
-// and the tiles with another player
+// Players can move by the mouse click 3 cells horizontally or vertically, avoiding tiles with obstacles
+// and the cells with another player
 function movePlayer() {
     let gameBox = $('.box');
     // Mouseover method shows the possible move of the player
@@ -185,22 +184,22 @@ function movePlayer() {
                 // Check the position X
                 for (let i = Math.min(posOld.x, posNew.x); i <= Math.max(posOld.x, posNew.x); i++) {
                     let num = getCellIndex(i, posOld.y);
-                    checkWeapon(num);
+                    checkWeapon(num); //Weapon.js (48) Check which weapon is contained within the cell
                 }
                 // Check the position Y
                 for (let i = Math.min(posOld.y, posNew.y); i <= Math.max(posOld.y, posNew.y); i++) {
                     let num = getCellIndex(posOld.x, i);
-                    checkWeapon(num);
+                    checkWeapon(num); //Weapon.js (48) Check which weapon is contained within the cell
                 }
                 whoIsActive();
-                // If the player moved, his tile lose a class 'active', which is set to opposite player
+                // If the player moved, his cell lose a class 'active', which is set to opposite player
                 if (player1Active) {
-                    playerPosition = boxPosition('.player2');
-                    posOld = getCoordinates(playerPosition);
+                    playerPosition = boxPosition('.player2'); // Weapon.js (163) To find the position of the box with player class
+                    posOld = getCoordinates(playerPosition); // Weapon.js (153)To find position x and y on the grid
                     $('.player1').removeClass('player1').removeClass('active');
                     $(this).addClass('player1');
                     $('.player2').addClass('active');
-                    fight(posNew, posOld);
+                    fight(posNew, posOld); // Weapon.js (97) If players cross over adjacent squares (horizontally or vertically), a battle begins
                     player1Active = false;
 
                 

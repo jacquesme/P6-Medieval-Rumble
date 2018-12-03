@@ -169,11 +169,11 @@ function getCellIndex(x, y) {
 /* Add components to the grid function like obstacles, weapon, players, which is used by 'add' function by their function constructor */
 var positionRules = null;
 function addComponents(itemClass, player) {
-    var restOfCells = cells;
+    var restOfCells = cells; //Array of cells []
     var boxes = $('.box');
     var empty = true;
     while (empty) {
-        var item = random(gridSize);
+        var item = random(gridSize); //Randomise the boxes on the grid(197)
         if (player === 1) {
             positionRules = item % 10 === 0;
         } else if (player === 2) {
@@ -184,7 +184,7 @@ function addComponents(itemClass, player) {
         if (positionRules && restOfCells.includes(item)) {
             boxes.eq(item).addClass(itemClass);
             var index = restOfCells.indexOf(item);
-            restOfCells.splice(index, 1);
+            restOfCells.splice(index, 1); //Changes the origenal array
             empty = false;
         }
     }

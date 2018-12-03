@@ -25,7 +25,7 @@ const powerDiv1 = $('.weapon-1');
 const powerDiv2 = $('.weapon-2');
 const body = $('body');
  
-// Grid constructor function to create grid tile board with obstacles (No Accsess)
+// Grid constructor function to create grid cells on the board with obstacles (No Accsess)
 const Grid = function(gridSize) {
     this.gridSize = gridSize;
 
