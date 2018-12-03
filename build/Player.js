@@ -103,7 +103,7 @@ function movePlayer() {
             }
         }
         if (!attacked) {
-            // If players don't cross adjacent tile, their path for possible movement will be shown in red or yellow block (activePath)
+            // If players don't cross adjacent tile, their path for possible movement will be shown in red or //yellow block (activePath)
             if (posNew.y === posOld.y && posNew.x <= posOld.x + possibleMoves && posNew.x >= posOld.x - possibleMoves || posNew.x === posOld.x && posNew.y <= posOld.y + possibleMoves && posNew.y >= posOld.y - possibleMoves) {
 
                 if (player1Active) {
@@ -113,7 +113,7 @@ function movePlayer() {
                 }
             }
         }
-        // If the movement isn't possible hover is false and the posible movement won't be shown (no red or yellow activePath)
+        // If the movement isn't possible hover is false and the posible movement won't be shown (no red or //yellow activePath)
     }, function () {
         hover = false;
         $(this).css('backgroundImage', '');
