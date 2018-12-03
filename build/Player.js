@@ -70,7 +70,7 @@ function movePlayer() {
         var posNew = getCoordinates(sqHovered); //Weapons.js(153) Get coordinates x and y
         //Check the posible move horizontally
         for (var i = Math.min(posOld.x, posNew.x); i <= Math.max(posOld.x, posNew.x); i++) {
-            var num = getCellIndex(i, posOld.y);
+            var num = getCellIndex(i, posOld.y); // Weapons.js(169) Get cell index (0 to 99)
             var cell = $('.box[data-index="' + num + '"]');
             if (cell.hasClass('barrier')) {
                 return;
@@ -87,7 +87,7 @@ function movePlayer() {
         }
         //Check the posible move vertically 
         for (var _i = Math.min(posOld.y, posNew.y); _i <= Math.max(posOld.y, posNew.y); _i++) {
-            var _num = getCellIndex(posOld.x, _i);
+            var _num = getCellIndex(posOld.x, _i); // Weapons.js(169) Get cell index (0 to 99)
             var _cell = $('.box[data-index="' + _num + '"]');
             if (_cell.hasClass('barrier')) {
                 return;
