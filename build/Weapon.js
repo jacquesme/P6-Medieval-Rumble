@@ -162,7 +162,7 @@ var playerPosition = boxPosition('.player1');
 // Old position is the position of not active player in the moment
 var posOld = getCoordinates(playerPosition);
 
-// Index of the tile on the grid (from 1 to 100);
+// Index of the cell on the grid (from 0 to 99);
 function getCellIndex(x, y) {
     return y * 10 + x;
 }
