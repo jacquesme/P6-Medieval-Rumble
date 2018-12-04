@@ -7,6 +7,8 @@ let hover = false;
 let scores = 0;
 let activePlayer = 1;
 let notActivePlayer;
+const powerDiv1 = $('.weapon-1');
+const powerDiv2 = $('.weapon-2');
 
 // Weapon function constructor:
 function Weapon(type, value, itemClass) {
@@ -44,7 +46,7 @@ function replaceWeaponOnMap(value, weapon, num) {
     playerNotActive.power = value;        
 }
 
-// Check weapon on the cell and call replace functions (for the player's boards and for the Grid):
+// Check weapon on the box and call replace functions (for the player's boards and for the Grid):
 function checkWeapon(num) {
     let cell = $('.box[data-index="' + num + '"]');
     if (cell.hasClass('weapon')) {
@@ -130,10 +132,10 @@ function initGame() {
 }
 
 initGame();
-movePlayer();
+movePlayer(); // Player.js (62) Initialize the movement of the players
 
 // Check which player is active:
-function whoIsActive() {
+function whoIsActive() { // Player.js (179) if (move)
     if (player1Active) {
         activePlayer = 2;
         notActivePlayer = 1;
