@@ -8,6 +8,8 @@ var move = true;
 var possibleMoves = 3;
 var attacked = false;
 
+var playerContainerDiv = $('.player-container');
+
 // Player construction function
 var Player = function Player(name, life, itemClass, player, weapon, power, activePath) {
     this.name = name;

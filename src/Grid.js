@@ -20,7 +20,6 @@ let cells = [];
 const startButton = $('#start');
 const gridContainer = $('#board-game');
 const startContainer = $('#intro');
-const playerContainerDiv = $('.player-container');
 const body = $('body');
  
 // Grid constructor function to create grid cells on the board with obstacles (No Accsess)

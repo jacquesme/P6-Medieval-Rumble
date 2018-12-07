@@ -22,7 +22,6 @@ var cells = [];
 var startButton = $('#start');
 var gridContainer = $('#board-game');
 var startContainer = $('#intro');
-var playerContainerDiv = $('.player-container');
 var body = $('body');
 
 // Grid constructor function to create grid cells on the board with obstacles (No Accsess)
