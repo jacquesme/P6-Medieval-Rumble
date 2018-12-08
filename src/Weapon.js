@@ -46,7 +46,7 @@ function replaceWeaponOnMap(value, weapon, num) {
     playerNotActive.power = value;        
 }
 
-// Check weapon on the box and call replace functions (for the player's boards and for the Grid):
+// Check weapon on the cell and call replace functions (for the player's boards and for the Grid):
 function checkWeapon(num) {
     let cell = $('.box[data-index="' + num + '"]');
     if (cell.hasClass('weapon')) {
@@ -124,8 +124,8 @@ function initGame() {
     gun2.add();
     player1.add();
     player2.add();
-    player1.setData();
-    player2.setData();
+    player1.setData(); // data-index no (get and set custom data attributes in my HTML)
+    player2.setData(); // data-index no (get and set custom data attributes in my HTML)
     $('.player1').addClass('active');
     extra.addExtras();
 
