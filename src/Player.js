@@ -130,7 +130,7 @@ function movePlayer() {
         hover = false;
         let sqClicked = $(this).data('index');
         let posNew = getCoordinates(sqClicked);
-        //new position of the player choosen by mouse click vertically - coordinate X
+        //new position of the player choosen by mouse click horisontally - coordinate X
         for (let i = Math.min(posOld.x, posNew.x); i <= Math.max(posOld.x, posNew.x); i++) {
             let num = getCellIndex(i, posOld.y);
             let cell = $('.box[data-index="' + num + '"]');
