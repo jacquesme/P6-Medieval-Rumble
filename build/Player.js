@@ -125,15 +125,17 @@ function movePlayer() {
     gameBox.on('click', function () {
         hover = false;
         var sqClicked = $(this).data('index');
-        var posNew = getCoordinates(sqClicked);
-        //new position of the player choosen by mouse click horisontally - coordinate X
+        var posNew = getCoordinates(sqClicked); //Weapons.js(153) Get coordinates x and y
+        //New position of the player chosen by mouse click horizontally - coordinate X
         for (var i = Math.min(posOld.x, posNew.x); i <= Math.max(posOld.x, posNew.x); i++) {
-            var num = getCellIndex(i, posOld.y);
+            var num = getCellIndex(i, posOld.y); // Weapons.js(169) Get cell index (0 to 99)
             var cell = $('.box[data-index="' + num + '"]');
+            // If new tile includes obstacle - don't move
             if (cell.hasClass('barrier')) {
                 $(this).css('cursor', 'not-allowed');
                 return;
             }
+            // If new cell includes players - don't move
             if (player1Active) {
                 if (cell.hasClass('player2')) {
                     return;
@@ -144,9 +146,9 @@ function movePlayer() {
                 }
             }
         }
-        //Check possible new position of the player choosen by mouse click vertically - coordinate x
+        //Check possible new position of the player chosen by mouse click vertically - coordinate x
         for (var _i2 = Math.min(posOld.y, posNew.y); _i2 <= Math.max(posOld.y, posNew.y); _i2++) {
-            var _num2 = getCellIndex(posOld.x, _i2);
+            var _num2 = getCellIndex(posOld.x, _i2); // Weapons.js(169) Get cell index (0 to 99)
             var _cell2 = $('.box[data-index="' + _num2 + '"]');
             // If new tile includes obstacle - don't move
             if (_cell2.hasClass('barrier')) {
@@ -164,6 +166,7 @@ function movePlayer() {
                 }
             }
         }
+        // If new cell includes players - don't move
         if (player1Active) {
             if ($(this).hasClass('player1')) {
                 return;
@@ -175,16 +178,16 @@ function movePlayer() {
         }
 
         if (move) {
-            // Check when the player can move maximum 3 tiles (possibleMoves) horizontally or vertically
+            // Check when the player can move maximum 3 cell (possibleMoves) horizontally or vertically
             if (posNew.y === posOld.y && posNew.x <= posOld.x + possibleMoves && posNew.x >= posOld.x - possibleMoves || posNew.x === posOld.x && posNew.y <= posOld.y + possibleMoves && posNew.y >= posOld.y - possibleMoves) {
                 // Check the position X
                 for (var _i3 = Math.min(posOld.x, posNew.x); _i3 <= Math.max(posOld.x, posNew.x); _i3++) {
-                    var _num3 = getCellIndex(_i3, posOld.y);
+                    var _num3 = getCellIndex(_i3, posOld.y); // Weapons.js(169) Get cell index (0 to 99)
                     checkWeapon(_num3); //Weapon.js (48) Check which weapon is contained within the cell
                 }
                 // Check the position Y
                 for (var _i4 = Math.min(posOld.y, posNew.y); _i4 <= Math.max(posOld.y, posNew.y); _i4++) {
-                    var _num4 = getCellIndex(posOld.x, _i4);
+                    var _num4 = getCellIndex(posOld.x, _i4); // Weapons.js(169) Get cell index (0 to 99)
                     checkWeapon(_num4); //Weapon.js (48) Check which weapon is contained within the cell
                 }
                 whoIsActive();
@@ -199,7 +202,7 @@ function movePlayer() {
                     player1Active = false;
                 } else {
                     playerPosition = boxPosition('.player1');
-                    posOld = getCoordinates(playerPosition);
+                    posOld = getCoordinates(playerPosition); //Weapons.js(153) Get coordinates x and y
                     $('.player2').removeClass('player2').removeClass('active');
                     $(this).addClass('player2');
                     $('.player1').addClass('active');
