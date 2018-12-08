@@ -148,7 +148,7 @@ function movePlayer() {
                 }
             }
         }
-        //Check possible new position of the player choosen by mouse click vertically
+        //Check possible new position of the player choosen by mouse click vertically - coordinate x
         for (let i = Math.min(posOld.y, posNew.y); i <= Math.max(posOld.y, posNew.y); i++) {
             let num = getCellIndex(posOld.x, i);
             let cell = $('.box[data-index="' + num + '"]');
