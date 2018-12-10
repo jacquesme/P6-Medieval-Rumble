@@ -34,7 +34,7 @@ const Grid = function(gridSize) {
         }
     }
     this.barrier = function(itemClass) {
-        addComponents(itemClass)
+        addComponents(itemClass) // Weapons.js (177)
     }
 }
 

@@ -18,12 +18,12 @@ function Weapon(type, value, itemClass) {
 
     // Add weapons to the Grid
     this.add = function () {
-    addComponents(this.itemClass);
+    addComponents(this.itemClass); // Weapons.js (177)
     }
     //Add quiz mark to the Grid
     this.addExtras = function(){
         for(var i = 1; i<=questionsMark; i++){
-            addComponents(this.itemClass);
+            addComponents(this.itemClass); // Weapons.js (177)
         }
     }
 };
@@ -174,7 +174,7 @@ function getCellIndex(x, y) {
 }
 /* Add components to the grid function like obstacles, weapon, players, which is used by 'add' function by their function constructor */
 let positionRules = null;
-function addComponents(itemClass, player) {
+function addComponents(itemClass, player) { 
     let restOfCells = cells; //Array of cells []
     let boxes = $('.box');
     let empty = true;

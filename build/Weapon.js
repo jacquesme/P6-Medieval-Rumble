@@ -20,12 +20,12 @@ function Weapon(type, value, itemClass) {
 
     // Add weapons to the Grid
     this.add = function () {
-        addComponents(this.itemClass);
+        addComponents(this.itemClass); // Weapons.js (177)
     };
     //Add quiz mark to the Grid
     this.addExtras = function () {
         for (var i = 1; i <= questionsMark; i++) {
-            addComponents(this.itemClass);
+            addComponents(this.itemClass); // Weapons.js (177)
         }
     };
 };

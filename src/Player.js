@@ -20,7 +20,7 @@ const Player = function(name, life, itemClass, player, weapon, power, activePath
 
     //Add players to the Grid
     this.add = function () {
-        addComponents(this.itemClass, this.player);
+        addComponents(this.itemClass, this.player); // Weapons.js (177)
     }
     // Set information about player on the player information Div;
     this.setData = function() {
