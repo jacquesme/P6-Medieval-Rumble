@@ -124,10 +124,10 @@ function initGame() {
     gun2.add();
     player1.add();
     player2.add();
-    player1.setData(); // data-index no (get and set custom data attributes in my HTML)
-    player2.setData(); // data-index no (get and set custom data attributes in my HTML)
-    $('.player1').addClass('active');
-    extra.addExtras();
+    player1.setData(); // data-index num (get and set custom data attributes in my HTML)
+    player2.setData(); // data-index num (get and set custom data attributes in my HTML)
+    $('.player1').addClass('active'); // Set player 1 to active class
+    extra.addExtras(); // (24)
 
 }
 
