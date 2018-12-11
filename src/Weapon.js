@@ -181,9 +181,9 @@ function addComponents(itemClass, player) {
     while (empty) {
         let item = random(gridSize); //Randomise the boxes on the grid(197)
         if (player === 1) {
-            positionRules = (item % 10 === 0);
+            positionRules = (item % 10 === 0); // Remainder operator
         } else if (player === 2) {
-            positionRules = (item % 10 === 9);
+            positionRules = (item % 10 === 9); // Remainder operator
         } else {
             positionRules = (item % 10 !== 0 && item % 10 !== 9);
         }
