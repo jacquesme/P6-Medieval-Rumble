@@ -72,7 +72,7 @@ function movePlayer() {
         //Check the posible move horizontally
         // Old position is the position of not active player in the moment
         for (var i = Math.min(posOld.x, posNew.x); i <= Math.max(posOld.x, posNew.x); i++) {
-            var num = getCellIndex(i, posOld.y); // Weapons.js(169) Get cell index (0 to 99)
+            var num = getCellIndex(i, posOld.y); // Weapons.js(171) Get cell index (0 to 99)
             var cell = $('.box[data-index="' + num + '"]');
             if (cell.hasClass('barrier')) {
                 return;
@@ -190,7 +190,7 @@ function movePlayer() {
                     var _num4 = getCellIndex(posOld.x, _i4); // Weapons.js(169) Get cell index (0 to 99)
                     checkWeapon(_num4); //Weapon.js (48) Check which weapon is contained within the cell
                 }
-                whoIsActive();
+                whoIsActive(); // Weapon.js (138)
                 // If the player moved, his cell lose a class 'active', which is set to opposite player
                 if (player1Active) {
                     playerPosition = boxPosition('.player2'); // Weapon.js (163) To find the position of the box with player class

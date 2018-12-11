@@ -5,7 +5,7 @@ Turn-based game created by using Javascript and jQuery.
 GAME'S RULES:
 1. Randomly generated game grid included barrier, which players can’t pass through directly.
 2. There are two players that can move maximum of 3 squares horizontally or vertically.
-3. There are six weapons that can inflict different damages, which can be collected by players passing through 
+3. There are weapons that can inflict different damages, which can be collected by players passing through 
 squares that contain a weapon and then replacing it with the weapon which the player currently have.
 4. There is also a quiz that can add or take away life point if answered correctly or incoirrectly.
 5. If players cross over adjacent squares (horizontally or vertically), a battle begins.
