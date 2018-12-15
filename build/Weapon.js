@@ -176,7 +176,7 @@ function addComponents(itemClass, player) {
     var boxes = $('.box');
     var empty = true;
     while (empty) {
-        var item = random(gridSize); //Randomise the boxes on the grid(197)
+        var item = random(gridSize); // Returns a random integer from 0 to 99
         if (player === 1) {
             positionRules = item % 10 === 0; // Remainder operator
         } else if (player === 2) {
@@ -194,5 +194,5 @@ function addComponents(itemClass, player) {
 }
 // Randomize the boxes on the grid to randomize position of game's components
 function random(num) {
-    return Math.floor(Math.random() * num);
+    return Math.floor(Math.random() * num); // Returns a random integer from 0 to 99
 }
