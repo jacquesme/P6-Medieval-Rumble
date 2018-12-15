@@ -61,7 +61,7 @@ var q7 = new Question('Which was the last country in Europe to convert officiall
 var questions = [q1, q2, q3, q4, q5, q6, q7];
 
 
-function initQuiz(){
+function initQuiz(){ // Weapon.js (93)
 scores = 0;
 $('.container-quiz').show();
 var n = random(questions.length);
