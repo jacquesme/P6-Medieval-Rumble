@@ -186,8 +186,8 @@ function addComponents(itemClass, player) {
         }
         if (positionRules && restOfCells.includes(item)) {
             boxes.eq(item).addClass(itemClass);
-            var index = restOfCells.indexOf(item);
-            restOfCells.splice(index, 1); //Changes the origenal array
+            var index = restOfCells.indexOf(item); // Returns the index of the first occurence of the value in an array
+            restOfCells.splice(index, 1); // Remove elements from the array, inserts new elements in their place and returnes the deleted element
             empty = false;
         }
     }
