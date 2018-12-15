@@ -181,9 +181,9 @@ function addComponents(itemClass, player) {
     while (empty) {
         let item = random(gridSize); // Returns a random integer from 0 to 99
         if (player === 1) {
-            positionRules = (item % 10 === 0); // Remainder operator
+            positionRules = (item % 10 === 0); // Remainder operator (Placed within first column)
         } else if (player === 2) {
-            positionRules = (item % 10 === 9); // Remainder operator
+            positionRules = (item % 10 === 9); // Remainder operator (Placed on the last column)
         } else {
             positionRules = (item % 10 !== 0 && item % 10 !== 9);
         }
