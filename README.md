@@ -8,5 +8,5 @@
     <li>If you answer wrong you will loose 10 life points.</li>
     <li>When in battle you can attack or defend.</li>
 </ul>
-
+<p>Here is the link: https://jacquesme.github.io/P6-Medieval-Rumble/.</p>
 <img src = "image/game1.png">
